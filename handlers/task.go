@@ -3,10 +3,11 @@ package handlers
 import (
 	"database/sql"
 	"net/http"
-	"simpleapi/models"
 	"strconv"
 
-	"github.com/labstack/echo"
+	"github.com/mahesadhanaa/simpleapi/models"
+
+	"github.com/mahesadhanaa/echo"
 )
 
 type H map[string]interface{}

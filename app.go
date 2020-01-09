@@ -2,10 +2,11 @@ package main
 
 import (
 	"database/sql"
-	"simpleapi/handlers"
 
-	"github.com/labstack/echo"
-	_ "github.com/mattn/go-sqlite3"
+	"github.com/mahesadhanaa/simpleapi/handlers"
+
+	"github.com/mahesadhanaa/echo"
+	_ "github.com/mahesadhanaa/go-sqlite3"
 )
 
 func main() {
@@ -15,7 +16,7 @@ func main() {
 	migrate(db)
 
 	// daftar api
-	e.GET("/tasks", handlers.GetTask(db))
+	e.GET("/tasks", handlers.GetTasks(db))
 	e.POST("/tasks", handlers.PutTask(db))
 	e.PUT("/tasks", handlers.EditTask(db))
 	e.DELETE("/tasks/:id", handlers.DeleteTask(db))
