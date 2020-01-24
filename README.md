@@ -1,3 +1,3 @@
 # simpleapi
 
-Simpe api golang with sqlite test
+Simpe api golang with sqlite test aja
